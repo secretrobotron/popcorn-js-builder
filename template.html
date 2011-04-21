@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Popcorn Custom Builder</title>
+    <style>
+      .info-section {
+        padding-left: 1.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="builder.py" method="post">
+      <h1>Popcorn Custom Builder</h1>
+      <h2>Core</h2>
+      <ul>
+        <li>
+          <input type="checkbox" id="popcorn.js" name="parts[]"
+            value="popcorn.js" checked="checked" />
+          <label for="popcorn.js">popcorn.js</label>
+        </li>
+        <!--CORE-->
+      </ul>
+
+      <h2>Plugins</h2>
+      <ul>
+<!--PLUGINS-->
+      </ul>
+
+      <h2>Parsers</h2>
+      <ul>
+        <li>
+          <input type="checkbox" id="parser-xml" name="parts[]"
+            value="parsers/parserXML" />
+          <label for="parser-xml">XML</label>
+        </li>
+<!--PARSERS-->
+      </ul>
+
+      <h2>Players</h2>
+      <ul>
+        <li>
+          <input type="checkbox" id="player-youtube" name="parts[]"
+            value="players/youtube" />
+          <label for="player-youtube">YouTube</label>
+        </li>
+<!--PLAYERS-->
+      </ul>
+
+      <h2>Options</h2>
+      <ul>
+        <li>
+          <input type="checkbox" id="minify" name="minify" value="1" />
+          <label for="minify">Minify with Google Closure Compiler</label>
+        </li>
+<!--OPTIONS-->
+      </ul>
+
+      <input type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
